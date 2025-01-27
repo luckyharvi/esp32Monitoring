@@ -152,13 +152,13 @@
 
 <script>
   const clientId = Math.random().toString(16).substr(2, 8);
-  const host = "wss://luckyharvi.cloud.shiftr.io:443";
+  const host = "wss://username.cloud.shiftr.io:numberPort";
 
   const option = {
     keepalive: 30,
     clientId: clientId,
-    username: "luckyharvi",
-    password: "srsC5HiqyKkpPLrg",
+    username: "",
+    password: "",
     protocolId: "MQTT",
     protocolVersion: 4,
     reconnectPeriod: 1000,
