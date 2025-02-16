@@ -112,7 +112,7 @@ void connect() {
   client.setWill("luckyharvi/status/0123456789", "offline", true, 1);
   Serial.println("Connecting to MQTT...");
   
-  while (!client.connect("klienidunik")) {
+  while (!client.connect("klienidunik")) { //also put the username and password if set
     delay(500);
     Serial.print(".");
   }
