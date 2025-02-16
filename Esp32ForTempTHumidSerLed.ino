@@ -42,7 +42,7 @@ void setup() {
 
   // Wi-Fi and MQTT setup
   WiFi.begin(ssid, pass);
-  client.begin("luckyharvi.cloud.shiftr.io", net);
+  client.begin("mqtt_user.cloud.shiftr.io", net);
   client.onMessage(subscribe);
 
   // Timer setup
@@ -112,7 +112,7 @@ void connect() {
   client.setWill("luckyharvi/status/0123456789", "offline", true, 1);
   Serial.println("Connecting to MQTT...");
   
-  while (!client.connect("klienidunik", "luckyharvi", "srsC5HiqyKkpPLrg")) {
+  while (!client.connect("klienidunik", "mqtt_user", "mqtt_pass")) {
     delay(500);
     Serial.print(".");
   }
