@@ -152,7 +152,7 @@
 
 <script>
   const clientId = Math.random().toString(16).substr(2, 8);
-  const host = "wss://username.cloud.shiftr.io:numberPort";
+  const host = "wss://username.cloud.shiftr.io:443";
 
   const option = {
     keepalive: 30,
