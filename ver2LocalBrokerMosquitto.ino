@@ -10,8 +10,8 @@ Servo servo;
 NusabotSimpleTimer timer;
 DHTesp dhtSensor;
 
-const char ssid[] = "ACER";
-const char pass[] = "bucabuca";
+const char ssid[] = "...";//input ssid
+const char pass[] = "...";//input password
 
 // Pin definitions
 const int pinRed = 16;
@@ -42,7 +42,7 @@ void setup() {
 
   // Wi-Fi and MQTT setup
   WiFi.begin(ssid, pass);
-  client.begin("192.168.1.12", net);
+  client.begin("192.168.1.12", net);//just need to enter di ip address
   client.onMessage(subscribe);
 
   // Timer setup
